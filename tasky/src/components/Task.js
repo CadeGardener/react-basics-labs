@@ -9,6 +9,9 @@ const Task = (props) => {
             <button onClick={props.markDone} className='doneButton'>Done</button>
             <button className='deleteButton' onClick={props.deleteTask}>Delete</button>
             <p>Due: {props.deadline}</p>
+            <p className="priolow" style={{backgroundColor: props.low ? 'lightgreen' : '#32CD32'}}>{props.priority}</p>
+            <p className="priomed" style={{backgroundColor: props.medium ? 'orange' : '#FFAE42'}}>{props.priority}</p>
+            <p className="priohigh" style={{backgroundColor: props.high ? 'red' : '#C30010'}}>{props.priority}</p>
         </div>
     )
 }

@@ -93,3 +93,7 @@ form {
   width: 50%;
   margin: auto;
 }
+
+.prio {
+  font-weight: bold;
+}
